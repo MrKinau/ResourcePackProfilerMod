@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "dev.kinau.resourcepackprofiler.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ProfiledResourceReloadMixin",
+		"ReloadableResourceManagerMixin",
+		"ReloadStateMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

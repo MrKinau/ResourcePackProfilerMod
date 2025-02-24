@@ -1,0 +1,5 @@
+{
+  "text.autoconfig.resourcepackprofiler.title": "Resource Pack Profiler",
+  "text.autoconfig.resourcepackprofiler.option.enabled": "Enable Resource Pack Profiler",
+  "resourcePackProfiler.screen.title": "Resource Pack Loading Profiling Results"
+}

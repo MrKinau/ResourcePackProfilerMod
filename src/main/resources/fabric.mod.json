@@ -1,31 +1,36 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "resourcepackprofiler",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Resource Pack Profiler",
+	"description": "Profile resource pack loading times",
 	"authors": [
 		"MrKinau"
 	],
 	"contact": {
-		"homepage": "https://github.com/MrKinau/modid",
-		"repo": "https://github.com/MrKinau/modid"
+		"homepage": "https://github.com/MrKinau/ResourcePackProfiler",
+		"repo": "https://github.com/MrKinau/ResourcePackProfiler"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/resourcepackprofiler/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"dev.kinau.modid.ExampleMod"
+			"dev.kinau.resourcepackprofiler.ResourcePackProfilerMod"
+		],
+		"modmenu": [
+			"dev.kinau.resourcepackprofiler.config.RPPModMenuIntegration"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json"
+		"resourcepackprofiler.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21.4",
+		"minecraft": ">=1.21.2",
 		"java": ">=21",
-		"fabric-api": "*"
-	}
+		"fabric-api": "*",
+		"cloth-config": ">=16.0.141"
+	},
+	"accessWidener": "resourcepackprofiler.accesswidener"
 }
